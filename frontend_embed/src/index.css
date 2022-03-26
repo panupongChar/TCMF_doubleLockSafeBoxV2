@@ -1,0 +1,9 @@
+* {
+  font-family: "Signika Negative" !important;
+  font-variant: small-caps;
+  transition: 0.5s;
+}
+
+body {
+  margin: 0;
+}
