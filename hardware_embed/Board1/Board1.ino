@@ -67,26 +67,19 @@ void keypadTask() {
   char key = keypad.getKey();
 // on keypad '*' and '#' give opposite value to each other
   if(key=='#'){
-//    Serial.println("You have pressed 'Backspace' !");
     if(keyIndex>0){
       keyIndex-=1;
       keyPassword[keyIndex]='\0';
-//      Serial.println(keyPassword);
     }
   }
   else if(key=='*'){
     keyIndex=0;
-//    Serial.println("You have pressed 'Enter' !");
     _post(); // <<<<<<<<<<< call POST here
     stringClear();
   }
   else if(key >= '0' && key <= '9'){
     if(keyIndex<=5){
-//      Serial.print("You have pressed '");
-//      Serial.print(key);
-//      Serial.println("' !");
       keyPassword[keyIndex]=key;
-//      Serial.println(keyPassword);
       keyIndex+=1;
     }
   }
@@ -106,7 +99,6 @@ void _get1(){
       }
       else{
         Serial.println(httpCode);
-//        Serial.println(payload);
         Serial.print("ready : ");
         Serial.println((int)(JSONGet["ready"]));
         readypw=(int)(JSONGet["ready"]);
@@ -143,7 +135,6 @@ void _get2(){
       }
       else{
         Serial.println(httpCode);
-//        Serial.println(payload);
         Serial.print("lock : ");
         Serial.println((int)(JSONGet["lock"]));
         lock=(int)(JSONGet["lock"]);
@@ -169,7 +160,6 @@ void _post(){
     http.begin(url_post);
     http.addHeader("Content-Type", "application/json");
     JSONPost["password"] = (const char*)(keyPassword);
-//    strcpy(JSONPost["password"],(const char*)(keyPassword));
     serializeJson(JSONPost, str);
     int httpCode = http.POST(str);
     if(httpCode==HTTP_CODE_OK){
@@ -206,7 +196,6 @@ void setup() {
   Serial.begin(115200);
   Serial2.begin(9600, SERIAL_8N1, 16, 17);
   WiFi_Connect();
-//  xTaskCreatePinnedToCore(keypadTask, "Keypad", 1024 * 32, NULL, 1, &task_keypad, 0);
 }
 
 void loop() {
