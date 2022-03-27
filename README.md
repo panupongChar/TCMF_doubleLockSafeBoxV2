@@ -1,11 +1,17 @@
 # TCMF_doubleLockSafeBoxV2
-ชื่อกลุ่ม : TCMF
 
-สมาชิกในกลุ่ม :  
-นายภาณุพงศ์ เจริญพร  
-นายปพนธ์ ชุณหคล้าย  
-นายสิทธิเจตน์ วงศ์ทิชาวัฒน์  
-นายจิณณเจตน์ อจลพงศ์  
+คลิปวิดีโอ :  
+https://youtu.be/Q5OcESxcq4c
+
+Team Members
+---
+
+| Student ID   | Name                         | GitHub                                              | Affiliation                                              |
+|--------------|------------------------------|-----------------------------------------------------|----------------------------------------------------------|
+| 6210501010   | ภาณุพงศ์ เจริญพร               | [panupongChar](https://github.com/panupongChar)     | Computer Engineering, Kasetsart University               |
+| 6210503691   | ปพนธ์ ชุณหคล้าย               | [canppchk](https://github.com/Nacjoker)             | Computer Engineering, Kasetsart University               |
+| 6210503853   | สิทธิเจตน์ วงศ์ทิชาวัฒน์           | [ttimestj](https://github.com/Nieraa)               | Computer Engineering, Kasetsart University               |
+| 6210505163   | จิณณเจตน์ อจลพงศ์             | [jinnajateA](https://github.com/jinnajateA)         | Computer Engineering, Kasetsart University               |
 
 ชื่อโครงงาน : Double Lock Safe Box V.2
 
@@ -104,5 +110,3 @@ Frontend
 - ใช้ react-router-dom ในการกำหนด path ของหน้าเว็บเพจต่างๆ และทำ navigation
 - ใช้ Material UI ในการตกแต่งหน้าเว็บไซต์
 
-คลิปวิดีโอ :
-https://youtu.be/Q5OcESxcq4c
